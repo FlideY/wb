@@ -29,7 +29,7 @@ jobs:
           echo "${{ secrets.GOOGLE_APPLICATION_CREDENTIALS }}" > credentials.json
 
       - name: Run script
-        run: python daily_report.py
+        run: python comission.py
         env:
           # Передаём путь к файлу (опционально, если скрипт его ожидает)
           GOOGLE_APPLICATION_CREDENTIALS: credentials.json
